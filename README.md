@@ -8,7 +8,7 @@
 <br/><br/>
 
 ## 프로젝트 구조
-<img src="https://user-images.githubusercontent.com/58362196/132942422-e0b7675c-c549-48c2-8ec0-17a3af11edf6.jpg" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/58362196/132942422-e0b7675c-c549-48c2-8ec0-17a3af11edf6.jpg" width="70%" height="70%">
 <br/><br/>
 
 ## 프로젝트 기능
