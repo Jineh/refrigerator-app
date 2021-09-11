@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="100dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="@color/white"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.22" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#a1c448"
+            android:elevation="20dp"
+            android:fontFamily="@font/cookie_r"
+            android:text="재료 추가하기"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/btn_round"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#a1c448"
+            android:elevation="20dp"
+            android:fontFamily="@font/cookie_r"
+            android:text="레시피 찾아보기"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/btn_round"
+            />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FDFFFC"
+            android:backgroundTint="#FDFFFC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@drawable/list" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="330dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/cookie_bold"
+                    android:gravity="center"
+                    android:text="나의 냉장고"
+                    android:textColor="#a1c448"
+                    android:textSize="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/photolist_deleteok"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="13dp"
+                    android:gravity="right"
+                    android:src="@drawable/check"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/photolist_delete"
+                    android:layout_width="30dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="right"
+                    android:src="@drawable/delete2" />
+
+                <ImageView
+                    android:id="@+id/photolist_deletecancel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/photolist_deleteok"
+                    android:gravity="right"
+                    android:src="@drawable/cancel2"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#a1c448"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="#ffffff"
+        app:itemIconTint="#ffffff"
+        app:menu="@menu/navi_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

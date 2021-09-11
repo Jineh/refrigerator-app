@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "797638938803",
+    "project_id": "my-refrigerator-a3aee",
+    "storage_bucket": "my-refrigerator-a3aee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797638938803:android:dfa0510bda5d8a40b8a0c6",
+        "android_client_info": {
+          "package_name": "org.tensorflow.lite.examples.detection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797638938803-ioteg9gp6qtfn7nq4rhsfbqcl14e3k6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD4dtyu5Qr7EI8NBfOVHd1y9AiHP_PNbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797638938803-ioteg9gp6qtfn7nq4rhsfbqcl14e3k6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
