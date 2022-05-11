@@ -68,4 +68,4 @@
 | `firebase` | 사용자, 식재료 관리 |
 | `tensorflow` | TensorFlow Object Detection API, MobileNet V2 |
 | `web crawling` | BeautifulSoup으로 이미지 데이터 셋 크롤링, JSoup으로 레시피 크롤링 |
-| `AES-256` | AES 알고리즘으로 사죵자 고유코드 암호화, 복호화 |
+
